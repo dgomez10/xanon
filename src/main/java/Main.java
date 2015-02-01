@@ -1,3 +1,5 @@
+package launch;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -6,6 +8,7 @@ import org.eclipse.jetty.servlet.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.*;
+import java.io.File;
 
 public class Main extends HttpServlet {
   @Override
@@ -21,7 +24,7 @@ public class Main extends HttpServlet {
 
   private void showHome(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-    resp.getWriter().print("Hello from Java!");
+    resp.getWriter().print("This page is under construction");
   }
 
   private void showDatabase(HttpServletRequest req, HttpServletResponse resp)
@@ -68,5 +71,23 @@ public class Main extends HttpServlet {
     context.addServlet(new ServletHolder(new Main()),"/*");
     server.start();
     server.join();
+
+    String webappDirLocation = "src/main/java/";
+        Tomcat tomcat = new Tomcat();
+
+        //The port that we should run on can be set into an environment variable
+        //Look for that variable and default to 8080 if it isn't there.
+        String webPort = System.getenv("PORT");
+        if(webPort == null || webPort.isEmpty()) {
+            webPort = "8080";
+        }
+
+        tomcat.setPort(Integer.valueOf(webPort));
+
+        tomcat.addWebapp("/", new File(webappDirLocation).getAbsolutePath());
+        System.out.println("configuring app with basedir: " + new File("./" + webappDirLocation).getAbsolutePath());
+
+        tomcat.start();
+        tomcat.getServer().await();  
   }
 }

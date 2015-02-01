@@ -1,1 +1,7 @@
 web:    java -cp target/classes:target/dependency/* Main
+
+web: java $JAVA_OPTS -jar web/target/dependency/webapp-runner.jar –port $PORT web/target/*.war
+
+web: sh target/bin/xanon
+
+web: ps:scale web=1

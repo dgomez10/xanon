@@ -21,7 +21,7 @@ public class Servlet extends HttpServlet {
         ServletOutputStream out = resp.getOutputStream();
         out.write("hello, welcome to a test landing page".getBytes());
         out.flush();
-        out.close();
+        out.close(); 
     }
 
 }

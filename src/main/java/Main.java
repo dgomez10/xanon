@@ -1,9 +1,8 @@
 package launch;
 
 import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.HTTPConfiguration;
 import org.eclipse.jetty.servlet.*;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -71,4 +70,5 @@ public class Main extends HttpServlet {
     context.addServlet(new ServletHolder(new Main()),"/*");
     server.start();
     server.join();
+  }
 }

@@ -10,6 +10,11 @@
   <url>org.eclipse.jetty</url>
    <dependencies>
     <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.4-1200-jdbc41</version>
+    </dependency>
+    <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
       <version>7.6.0.v20120127</version>

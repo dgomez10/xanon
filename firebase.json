@@ -1,0 +1,9 @@
+{
+  "firebase": "xanon",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

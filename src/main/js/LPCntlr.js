@@ -1,12 +1,16 @@
 
+
+.controller('EmailController', function($scope, ))
+
+
 .config(['$routeProvider', function ($routeProvider) {
   $routeProvider.when('/dashboard', {
     templateUrl:'xanon/wp_index.html',
     controller:'LPCntlr',
     resolve:{
-      projects:['Projects', function (Projects) {
+      projects:['Xanon', function (Xanon) {
         //TODO: need to know the current user here
-        return Projects.all();
+        return Xanon.all();
       }],
       tasks:['Tasks', function (Tasks) {
         //TODO: need to know the current user here
@@ -14,4 +18,5 @@
       }]
     }
   });
-}])  //NEED TO BE ABLE TO RECONFIGURE THE LAST PART OF THE METHOD
+}]) //NEED TO BE ABLE TO RECONFIGURE THE LAST PART OF THE METHOD
+

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en ng-app="xanon">
+<html lang="en" ng-app="xanon">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,15 +31,26 @@
     
   </head>
 
-  <body ng-controller="LPCntlr">
-
-    <script>
-      var myDataRef = new Firebase('https://xanon.firebaseIO.com');
-      <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js'></script>
+  <body ng-controller="EmailController">
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js'></script>
             [ADD THE SCRIPT TAGS HERE]
       <link rel='stylesheet' href='/resources/tutorial/css/example.css'/>
+    
+    <script>
+      
+      <!-- how do you add the xanonEmail controller here? -->
 
+      ng-model = "user.name"
+      <!-- add controller and add module here???? -->
     </script>
+
+    <ul id='example-messages' class='example-chat-messages'>
+      <li ng-repeat='msg in messages'>
+       <strong class='example-chat-username'>{{msg.from}}</strong>
+        {{msg.body}}
+      </li>
+    </ul>
+
 
     <div class="site-wrapper">
 
@@ -62,6 +73,33 @@
             <h1 class="cover-heading">Save more. Propagate more.</h1>
             <p class="lead"> Your chance to spread altruism to your social network </p>
 
+
+          <div class="container">
+    
+    <!-- PAGE HEADER -->
+    <div class="page-header"><h1>Sign-Up for our Newsletter</h1></div>
+   
+    <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+        <!-- NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <label>Name*</label>
+            <input type="text" name="name" class="form-control" ng-model="user.name" required>
+            <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+        </div>
+            
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="user.email">
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+    </form>
+
+
             <div>
               <form id="checkout" method="post" action="/checkout">
               <div id="dropin"></div>
@@ -71,7 +109,7 @@
 
 
             <p class="lead">
-              <a href="html/question_form.html" class="btn btn-lg btn-danger">Questions?</a>
+              <a href="main/html/question_form.html" class="btn btn-lg btn-danger">Questions?</a>
             </p>
           </div>
 
@@ -98,4 +136,4 @@
     <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
   </body>
-</html  ng-app="xanon">
+</html>

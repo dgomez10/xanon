@@ -1,0 +1,26 @@
+{
+  "name": "xanon",
+  "version": "4.11.2",
+  "description": "Help for email database communication",
+  "main": "/src/main/js/Models/",
+  "scripts": {
+    "test": "node todo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgomez10/xanon.git"
+  },
+  "keywords": [
+    "xanon",
+    "email"
+  ],
+  "author": "Damian Gomez <damian@gomezs.io>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dgomez10/xanon/issues"
+  },
+  "homepage": "https://github.com/dgomez10/xanon",
+  "dependencies": {
+    "express": "~4.11.2"
+  }
+}

@@ -1,14 +1,5 @@
 
 
-var models = require("./models"); //place on top of the file
-models.sequelize.sync().then(function() {
- var server = app.listen(app.get('port'), function() {
- console.log('Express server listening on port ' + server.address().port);
- });
- var routes = require('./routes'); //place on top of the file</pre>
- app.get('/todo', routes.gettodos);
- app.post('/todo', routes.savetodos);
-});
 
 
 angular.module('xanonEmail' ["firebase"]).configure('EmailController'), {, }  //variables need to be configured in 

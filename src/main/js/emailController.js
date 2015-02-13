@@ -2,8 +2,8 @@
 
 xanonEmail.controller('emailController',['$scope', '$firebase' function($scope, $firebase) {
   $firebase
-
-  var ref = new Firebase("https://o8i28rwmv81.firebaseio-demo.com/");
+  var url = "https://o8i28rwmv81.firebaseio-demo.com/"; 
+  var ref = new Firebase(url);
   $scope.messages = $firebase(myDataRef).$asArray();
 
   $scope.master = {};
@@ -28,6 +28,16 @@ xanonEmail.controller('emailController',['$scope', '$firebase' function($scope, 
         success: $touched 
     };
   };
+
+  $scope.addUser = function(user.name){
+    pg.connect(process.env.DATABASE_URL, function(err, client){
+      var query = client.query('VALUES(\'' + $scope.user.name + '\', \'' + $scope.user.email + '\')')
+      query.on('row', function(row){
+        console.log(JSON.stringify(row));
+      });
+
+    }); //I dont know but have a psql database already -- how do I find the URL? 
+  }; 
 
 }]);
 

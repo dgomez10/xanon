@@ -1,5 +1,5 @@
 
-
+//there is still node stuff in here that needs to be reconfigured 
 
 function TodoCtrl($scope, $http) {
     $scope.todos = [];

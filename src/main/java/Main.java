@@ -8,6 +8,8 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.*;
 import java.io.File;
+import java.lang.Object;
+
 
 public class Main extends HttpServlet {
   @Override
@@ -71,4 +73,71 @@ public class Main extends HttpServlet {
     server.start();
     server.join();
   }
+
+  public static String httpGet(String urlStr) throws IOException {
+  URL url = new URL(urlStr);
+  HttpURLConnection conn =
+      (HttpURLConnection) url.openConnection();
+
+  if (conn.getResponseCode() != 200) {
+    throw new IOException(conn.getResponseMessage());
+  }
+
+  // Buffer the result into a string
+  BufferedReader rd = new BufferedReader(
+      new InputStreamReader(conn.getInputStream()));
+  StringBuilder sb = new StringBuilder();
+  String line;
+  while ((line = rd.readLine()) != null) {
+    sb.append(line);
+  }
+  rd.close();
+
+  conn.disconnect();
+  return sb.toString();
+  }
+
+ public static String httpPost(String urlStr, String[] paramName, String[] paramVal) throws Exception {
+  URL url = new URL(https://rest.developer.yodlee.com/services/srest/restserver/v1.0​/authenticate/coblogin);  
+  //figure out way to implement Yodlee REST Agg API for coblogin verification 
+  HttpURLConnection conn =
+      (HttpURLConnection) url.openConnection();
+  conn.setRequestMethod("POST");
+  conn.setDoOutput(true);
+  conn.setDoInput(true);
+  conn.setUseCaches(false);
+  conn.setAllowUserInteraction(false);
+  conn.setRequestProperty("Content-Type",
+      "application/x-www-form-urlencoded");
+
+  // Create the form content
+  OutputStream out = conn.getOutputStream();
+  Writer writer = new OutputStreamWriter(out, "UTF-8");
+  for (int i = 0; i < paramName.length; i++) {
+    writer.write(paramName[i]);
+    writer.write("=");
+    writer.write(URLEncoder.encode(paramVal[i], "UTF-8"));
+    writer.write("&");
+  }
+  writer.close();
+  out.close();
+
+  if (conn.getResponseCode() != 200) {
+    throw new IOException(conn.getResponseMessage());
+  }
+
+  // Buffer the result into a string
+  BufferedReader rd = new BufferedReader(
+      new InputStreamReader(conn.getInputStream()));
+  StringBuilder sb = new StringBuilder();
+  String line;
+  while ((line = rd.readLine()) != null) {
+    sb.append(line);
+  }
+  rd.close();
+
+  conn.disconnect();
+  return sb.toString();
+ }
+
 }

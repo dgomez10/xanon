@@ -1,0 +1,16 @@
+GET /api/v1/account/balance HTTP/1.1
+ Accept: */
+
+User-Agent: Java
+ ACCESS_KEY: FSDgDrPrhUous5p4 
+ACCESS_SIGNATURE: <YOUR-COMPUTED-SIGNATURE>
+ ACCESS_NONCE: <YOUR-UPDATED-NONCE> 
+Connection: close
+ Host: coinbase.com  
+
+POST /api/v1/account/balance HTTP/1.1
+Accept: */
+
+ ACCESS_NONCE: url : https://api.coinbase.com/v1/account/balance?nonce=1234
+Connection: 
+Host: coinbase.com

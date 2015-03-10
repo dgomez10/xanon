@@ -1,0 +1,1 @@
+/bin/sh -c cd /Users/oti/Desktop/xanon/xanon && javac @/Users/oti/Desktop/xanon/xanon/target/classes/org.codehaus.plexus.compiler.javac.JavacCompiler7565670595451224750arguments

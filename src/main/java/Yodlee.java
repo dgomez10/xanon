@@ -20,7 +20,7 @@ public Yodlee {
 			HttpURLConnection auth = (HttpURLConnection) url.openConnection("https://rest.developer.yodlee.com/services/srest/restserver/v1.0​/authenticate/login")
 			conn.setRequestMethod("POST");
 			conn.setDoInput(true);
-			authUser = new String {}.;
+			authUser = new String {};
 			authUser = authUser.push(); //wro		
 			conn.setRequestProperty.authUser.password("sbMemdgomez101#123"); 
 			conn.setRequestProperty.authUser.login("sbMemdgomez101")

@@ -9,6 +9,8 @@ import java.net.URISyntaxException;
 import java.sql.*;
 import java.io.File;
 import java.lang.Object;
+import java.HTTPClient.*
+
 
 
 public class Main extends HttpServlet {
@@ -16,21 +18,89 @@ public class Main extends HttpServlet {
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
 
-    if (req.getRequestURI().endsWith("/db")) {
+    if (req.getRequestURI().endsWith("/endpoint?oauthtoken=t")) {
       showDatabase(req,resp);
     } else {
       showHome(req,resp);
     }
   }
 
+  public void doPOST(HTTPServletRequest req, HTTPServletResponse resp)
+	throws ServletException, IO Exception {
+	  if (req.getRequestURI().endwith("/users")) {
+		showDatabase(req, resp);
+		userId = new String {};
+		userId = userId.push();
+		conn.setRequestProperty.userId.id.push(); 
+		conn.setRequestProperty.userId.username.push();
+		conn.setRequestProperty.userId.active.push(); 
+		conn.setRequestProperty.userId.flexible_specs.push(); 
+		Obejct flexible_specs = new String {
+			"life_event": life_event.get(),
+			2: 
+			3
+			4
+			5
+	} 
+		Object demographics = new String {
+			id: id.get(), 
+			username: username.get(),
+			active: true, 
+			attributesName: {
+				"Gender" : Gender.get(),
+				"Age" : Age.get(),
+				"Language" : Language.get(),
+				"geo_location" : geo_location.get(), 
+	}
+	}
+		JsonReader userInfo = new Json.createReader("userInfo");
+		JsonObject userInfoObject = new userInfo.getObject("userId"); 
+		return JsonReader.close(); 
+	}
+}
+
+  public void doPOST(HTTPServletRequest req, HTTPServletResponse resp)
+	throws ServletException, IO Exception {
+		if(req.getRequestURI().endswith("/items")) {
+		  showDatabase(req, resp);
+		  userAttr = new String {};  
+		  userAttr = user_id.push();
+		  conn.setRequestProperty.userAttr.push(); 
+		  conn.setRequestProperty.userAttr.id();
+		  conn.setRequestProperty.userAttr.type(); 
+		  conn.setRequestProperty.userAttr.name();
+		  conn.setRequestProperty.userAttr.atributeNames()
+		  Object attributeNames = new String {
+			"title" : title.get(),
+			"artist" : artist.get(), 
+			"genre" : genre.get(),
+			"price" : price.get(),
+			"books" : books.get(),
+		}
+		 JsonReader userSocial = new Json.createReader("userSocial")
+		 JsonObject userSocialObject = new userSocial.readObject("userAttr"); 
+		 return jsonReader.close(); 
+		  else {
+		    throw System.err.println("Receive error: " + userSocial.getReasonLine()); 
+}
+
+
+}
+
+}
   private void showHome(HttpServletRequest req, HttpServletResponse resp)
-      throws ServletException, IOException {
-    resp.getWriter().print("This page is under construction");
+      if (req() >= 300) {
+	 throws ServletException, IOException {
+    	resp.getWriter().print("We weren't able to get your information.");
+      else 
+	Context dbConnection.get(); 
+
+
   }
 
   private void showDatabase(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-    Connection connection = null;
+    Connection connection = req.get();
     try {
       connection = getConnection();
 
@@ -48,12 +118,12 @@ public class Main extends HttpServlet {
     } catch (Exception e) {
       resp.getWriter().print("There was an error: " + e.getMessage());
     } finally {
-      if (connection != null) try{connection.close();} catch(SQLException e){}
+      if (connection != req) try{connection.close();} catch(SQLException e){}
     }
   }
 
   private Connection getConnection() throws URISyntaxException, SQLException {
-    URI dbUri = new URI(System.getenv("DATABASE_URL"));
+    URI dbUri = new URI(System.getenv("DB_URL"));
 
     String username = dbUri.getUserInfo().split(":")[0];
     String password = dbUri.getUserInfo().split(":")[1];
@@ -109,6 +179,7 @@ public class Main extends HttpServlet {
   conn.setAllowUserInteraction(false);
   conn.setRequestProperty("Content-Type",
       "application/x-www-form-urlencoded");
+
 
   // Create the form content
   OutputStream out = conn.getOutputStream();

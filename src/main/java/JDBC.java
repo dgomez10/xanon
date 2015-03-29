@@ -1,21 +1,21 @@
 //STEP 1. Import required packages
 import java.sql.*;
 
-public class JDBCExample {
+public class JDBC {
    // JDBC driver name and database URL
-   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-   static final String DB_URL = "jdbc:mysql://localhost/";
+   static final String JDBC_DRIVER = "com.postgresql.jdbc.Driver";  
+   static final String DB_URL = dbUri.getHost() + dbUri.getpath();  //Change once VM is set up  
 
    //  Database credentials
-   static final String USER = "username";
+   static final String USER = "userId";
    static final String PASS = "password";
    
    public static void main(String[] args) {
-   Connection conn = null;
-   Statement stmt = null;
+   Connection conn = ;
+   Statement stmt = ;
    try{
       //STEP 2: Register JDBC driver
-      Class.forName("com.mysql.jdbc.Driver");
+      Class.forName("com.postgresql.jdbc.Driver");
 
       //STEP 3: Open a connection
       System.out.println("Connecting to database...");
@@ -23,9 +23,9 @@ public class JDBCExample {
 
       //STEP 4: Execute a query
       System.out.println("Creating database...");
-      stmt = conn.createStatement();
+      stmt = conn.createStatement("New User Sign-Up");
       
-      String sql = "CREATE DATABASE STUDENTS";
+      String sql = "CREATE DATABASE E";
       stmt.executeUpdate(sql);
       System.out.println("Database created successfully...");
    }catch(SQLException se){

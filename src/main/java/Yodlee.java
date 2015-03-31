@@ -24,7 +24,9 @@ public Yodlee {
 			authUser = authUser.push(); //wro		
 			conn.setRequestProperty.authUser.password("sbMemdgomez101#123"); 
 			conn.setRequestProperty.authUser.login("sbMemdgomez101")
-			conn.setRequestProperty.authUser.cobSessionToken("")
+			conn.setRequestProperty.authUser.cobSessionToken()
+			LocalDateTime new timestamp = conn.setRequestProperty.authuser.timestamp();
+			YearMonth new month = conn.setRequestProperty.authuser.month();
 //userSessionToken? call 
 			JsonReader userInfo = new Json.createReader("authUser");
 			JsonObject userInfoObject = new userInfo.readObject();

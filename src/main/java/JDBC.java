@@ -8,7 +8,7 @@ public class JDBC {
 
    //  Database credentials
    static final String USER = "userId";
-   static final String PASS = "password";
+   static final String PASS = "password"; //long-lived access token 
    
    public static void main(String[] args) {
    Connection conn = ;

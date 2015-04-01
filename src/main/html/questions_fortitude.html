@@ -1,6 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en" class="html" >
+<!DOCTYPE html lang="en" class="html" >
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +7,109 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" src="fortitude-sass/app/assets/images/icons/hamburger.png">
-
     <title>Lucrativity</title>
 
    
-    <link href="../../../fortitude-sass/dist/fortitude-theme.css" rel="stylesheet">
-    <link href="../../../fortitude-sass/dist/fortitude.css" rel="stylesheet" id="fortitude">
+    <link src="local://Desktop/xanon/xanon/fortitude-sass/dist/fortitude-theme.css" rel="stylesheet">
+    <link src="local://Desktop/xanon/xanon/fortitude-sass/dist/fortitude.css" rel="stylesheet" id="fortitude">
 
-    <script src="xanon_lp/src/main/js/app.js" id="fortitude"></script>
-	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> 
+    <script src="local://Desktop/xanon/xanon/app.js></script>
+	<link href="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+   <!--[if lt IE 9]-->
 
+<script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+
+	<!--[endif]-->
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <--![endif]-->
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   </head>
 
+
+
+<script>
+
+var map_coor; 
+
+function initialize(map, finance_info) {
+	$('div.initialize.html()')
+  var mapOptions = {
+    zoom: 15,
+    center: new google.maps.LatLng(37.335998,-121.8855781)
+  };
+	return mapOptions
+  	if (mapOptions == true){
+	var map = new google.maps.Map.eventaddDomListener(window, 'finance_info', initialize);
+	//yodleeJson from haskell
+	var finance_info = ioService.get('transactionID');
+	var map = ioService.get('geo_location');
+  	window.map_coor = new google.maps.map.data.GeoJsonOptions.getFeatureById('finance_info');
+  	//use only transactionID, and location
+	var ind_coor = map_coor.map.data.getId();
+};
+
+function loadScript() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+      '&signed_in=true&callback=initialize';
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+
+
+function money(finance_info, points) {
+	alert(window.map_coor)
+
+	  for (i= 0, i < map_coor.length, i++) {
+		new Array expenses = finance_info.map.ioService.data.getId(); 
+		//render	
+		new Array coordinates = map_coor.map.ioService.data.getId();  
+		//render
+		new var points = new markerShape.shape('circle').getContent.isArray('expenses').coordinates[i]   
+	        $('div.points.html()')
+	
+	  else
+	   end 
+};
+	new hover = points.data.mouseevent.edge(5)
+	if  (hover == true) {
+	   
+	//clickable 
+	 var input_data = element.addEventListener(initialize, "click_here", true)
+	 input_data = points.data.mouseevent.scale(10)
+	else
+	  //update(requires a clock...) 
+	  input_data = new points.markerShape.fillColor('purple').shape('circle').getContent.isArray('expenses').coordinates[i] 
+
+	  };
+
+for points.getElementById('span') {
+	 console.log('<div>' + points.type() + '</td>')
+};
+for expenses.getElemnetById('span') {
+	console.log('<div>' + expenses.type() + '</td>')
+
+
+//shape //connecttoshapes
+	if (expenses < 4) { 
+ 	  new blueball = points.makershape.coords[x, y, 10].type('circle').fillColor('blue')
+	else (expenses >= 4)
+	  new redball = points.makershape.coord[x, y, 10].type('circle').fillColor('red')
+};
+};
+</script>
+
+<!--END MAP FUNCTIONS-->
+
   <body>
+	<div ="initialize">
     <h1 class="navigationbar__header">
         <div class="container">
             <h3 class="tabs__target-is-active">Questions</h3>
@@ -42,90 +123,14 @@
 
     <div class="box">
 		
+
+<!-- BEGIN GRAPH D3 -->
+
 <?xml version="1.0" standalone="yes"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="12cm" height="6cm" viewBox="0 0 1200 600"
-     xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <title>Account_Info</title>
-
-  <script>
-
-var rootElement = document.documentElement('outside');
-var firstTier = rootElement.childNodes(month, invoiceId);
-
-// firstTier is the NodeList of the direct children of the root element
-for (var i = 0; i < firstTier.length; i++) {
-  var el = document.getElementById.nextSibling(), i = 1;
-   // do something with each direct kid of the root element
-   // as firstTier[i]
-	for el.childNodes.nodeName(x, y) {
-		//find (amount)
-		var time = el.getElementById(month)
-		//find timestamp
-		var expenditures = el.getElementById(invoiceId)
-}
-
-var el = document.getElementById('div').nextElementSibling;
-  console.log('<p>Expense vs Time div</p><td><tr>');
-  while (el) {
-    console.log('<td>' + el.nodeName + '</td>');
-    el = el.nextElementSibling;
-  }
-  console.log('</tr>');
-
-while (el) {
-  console.log(i + '. ' + el.nodeName);
-  el = el.nextSibling;
-  i++;
-}	
-}
-  
-var nextNode = elementNodeReference.nextElementSibling;
-
-</script>
 
 
-<table id="outside">
-
-<script> 
-var el = document.getElementById('outside');
-el.addEventListener("click", modifyText, false);
-
-
-var ClickValue = function(el.nodeName) {
-  this.name = 'Something Good';
-  this.handleEvent = function(event) {
-    console.log(this.name); // 'Something Good', as this is the Something object
-    switch(event.type) {
-      case 'click':
-        for el.getElementById('span') 
-	 console.log('<div>' + el.nodeName + '</td>'); 
-        break;
-      case 'dblclick':
-        //newpage ...
-        break;
-    }
-  };
-
-  // Note that the listeners in this case are this, not this.handleEvent
-  element.addEventListener('click', this, false);
-
-console.log('log');
-
-
-</script>
-
-<td>
-<tr>
-<div id="expenses" >Expenses ($)</div>
- </tr>
-</td>
-
-<tr><div id="time">Time/Month</div></tr>
-</table>
-
-<svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+		"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
   <span d3.selectAll("tr").selectAll("td").selectAll("span");>
   <span d3.behavior.zoom([1000]).scale([2, 2]).size([300, 300]).x([1, 3]).y([1, 10]).selectAll("tr".selectAll("td").selectAll("span"));>
   <rect x="time" y="id" width="1198" height="598"
@@ -149,10 +154,122 @@ console.log('log');
 </span>
 </span>
 </svg>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="12cm" height="6cm" viewBox="0 0 1200 600"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+  <title>Account_Info</title>
+
+  <script>
+
+
+var rootElement = document.documentElement('rootElement');
+var firstTier = rootElement.childNodes(month, invoiceId);
+
+// firstTier is the NodeList of the direct children of the root element
+for (var i = 0; i < firstTier.length; i++) {
+  var el = document.getElementById.nextSibling(), i = 1;
+   // do something with each direct kid of the root element
+
+
+   // as firstTier[i]
+
+	for el.childNodes.nodeName(time, expenditures) {
+		//find (amount)
+		var time = el.getElementById(month)
+		//find timestamp
+		var expenditures = el.getElementById(invoiceId)
+}
+
+$('div.poisson.html()')
+var el = document.getElementById('div').nextElementSibling;
+  console.log('<tr>' '<td>' + el.nextElementSibling + '</td>' '</tr>');
+  while (el) {
+    console.log('<td>' + el.nodeName + '</td>');
+ };
+    console.log('</tr>'); 
+
+while (el) {
+  console.log(i + '. ' + el.nodeName);
+  el = el.nextSibling;
+  i++;
+}	
+}
+  
+var nextNode = elementNodeReference.nextElementSibling;
+
+</script>
+
+
+<table id="outside">
+
+<script> 
+function poisson() {
+  var el = document.nodeName.getElementById('rootElement');
+  el.addEventListener(click, modifyText, true);
+	var tag = div.span.html() 
+	 };
+</script>
+
+<td>
+<tr>
+<div id="expenses" >Expenses ($)</div>
+ </tr>
+</td>
+
+<tr><div id="time">Time/Month</div></tr>
+</table>
+</svg></svg>
 </xml>
-      <div class="layout">
+
+
+<!-- END OF FIRST GRAPH -->
+<!-- This is where the first map will be rendered  -->
+
+<script src="https://maps.googleapis.com/maps/api/js?client="410653272953-ltr4uss0l4ordiq262b8c11p7qluo0i8.apps.googleusercontent.com"  type="text/javascript"> </script>
+
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }
+  #map-canvas { height: 100% }
+</style>
+
+ 
+<div id="finance_info" style="width: 100%; height: 100%">
+  <table>
+	<td>
+	<h2>Total # Expenses</h2>
+	<tr>
+	<div id="points">
+	 <script> 	
+	 function render ()    {
+	   var x_blue = blueball.parseEach.data();
+	   var x_red = redball.parseEach.data();
+	//show render 
+}		x_blue.data.feature
+		x_red.data.feature
+
+	</script>	  
+		<p>jksjjsdjj<p>
+	</div>
+	<tr>
+	<td>
+	<div id="expenses, time"><tr><h2>Months</h2></tr></div>
+ </table>
+	
+
+</div>
+
+
+
+<!-- END MAP --> 
+
+      <div class="container">
    
-          <div class="container">
+          <div class="box">
             <h1 class="content-box">Please ask me <i>anything</i> you think is relevant to Xanon</h1>
             <p class=""> We are working for you </p>
               <table class="table">
@@ -193,9 +310,61 @@ console.log('log');
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../../../fortitude-sass/dist/fortitude.min.js"></script>
-    <script type="text/javascript" src="../../../fortitude-sass/dist/fortitude.jquery.js"></script>
-    <script type="text/javascript" src="../../../fortitude-sass/app/assets/javascripts/fortitude/jquery/index.js"></script>
-    <script type="text/javascript" src="../../../fortitude-sass/app/assets/javascripts/fortitude/jquery/*"></script>
-  </body>
+    <script type="text/javascript" src="local://Desktop/xanon/xanon/fortitude-sass/dist/fortitude.min.js"></script>
+    <script type="text/javascript" src="local://Desktop/xanon/xanon/fortitude-sass/dist/fortitude.jquery.js"></script>
+    <script type="text/javascript" src="local://Desktop/xanon/xanon/fortitude-sass/app/assets/javascripts/fortitude/jquery/index.js"></script>
+    <script type="text/javascript" src="local://Desktop/xanon/xanon/fortitude-sass/app/assets/javascripts/fortitude/jquery/*"></script>
+<div>  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

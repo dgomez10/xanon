@@ -27,7 +27,8 @@ module Yodlee where
 			, getLikes :: String 
 } deriving (Show)
 
-   data Yodlee = Yodlee { getDate :: Maybe UTCTime 
+   data Yodlee = Yodlee { getDate :: Maybe UTCTime
+			, getLocation :: Maybe //coord 
 			, getCobToken :: Interger 
 			, getLogin :: String 
 			, getPassword :: Bool
@@ -39,7 +40,7 @@ module Yodlee where
 			, getTransactionID :: Integer
 			, getAccountID :: Interger
 			, getBatchID :: Interger
-		<D-j>	, getInvoiceID :: Interger
+			, getInvoiceID :: Interger
 			, getAccountID :: Interger  
 			
 } deriving (Show)
@@ -73,5 +74,5 @@ module Yodlee where
 	case HM.lookup "User" hm of 
 	   Just (Number (I n)) -> n 
 	   Nothing	-> error "Your missing a number"
-	where (Just (Object hm)) = decode (YE.pack fbjson) :: Maybe Value
+	where (Just (Object hm)) = decode (YE.pack yodleejson) :: Maybe Value
 

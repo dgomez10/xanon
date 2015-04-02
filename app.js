@@ -70,7 +70,7 @@ function void QueryInterface(
 
 function makeURI(aURL, aOriginCharset, aBaseURI) {
 	//path from Yodlee
-  var ioService = Components.interfaces.nsISupportsArray('HadoopYodlee.java')
+  var ioService = Components.interfaces.nsISupportsArray('yodlee.json')
                   .getService(Components.interfaces.nsIIOService);
 	//logic: must create Array instances that html can use in function money
 	for ioService {

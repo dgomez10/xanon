@@ -1,0 +1,42 @@
+
+
+
+new Array yodlee = {
+	Date :: [17:21 on Wednesday, April 1, 2015 ],
+	ClientId :: 13450A4390F090RE09,
+	URL :: http://www.bankofamerica.com/oauth>?username="dgomex4350"
+	User :: dgomex4350
+	SiteID :: 204005
+	AccountID :: 234095205300
+	BatchID :: {
+		1 :: 13349340,
+		2 :: e30939209,
+		3 :: ew43423, 
+		4 :: 35463754,	
+		}, 
+	TransactionID :: {
+		1 :: 23435435,
+		2 :: 35653344,
+		3 :: 435635645,
+		4 :: 35634564,
+		5 :: 34534656,
+		6 :: 4356457,
+		7 :: 64574374,
+		8 :: 43534634,
+		9 :: 3634633,
+		10 :: 34564537,
+		11 :: 23423535
+			}
+	Month :: {
+		Jan :: 34
+		Feb :: 54
+		Mar :: 34
+		Apr :: 178
+		May :: 54
+		Jun :: 156
+		Jul :: 145
+		},
+
+}
+
+

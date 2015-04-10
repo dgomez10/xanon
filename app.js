@@ -203,10 +203,7 @@ function poissonDiscSampler(width, height, radius) {
 }
 
 
-
-
-
-
+}
 
 
 

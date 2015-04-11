@@ -67,8 +67,6 @@ module Yodlee where
 	  (v .: "AccountID") <*>
 
 
-
-
    getRHLines :: String -> Integer
    getRHLines fbjson = 
 	case HM.lookup "User" hm of 

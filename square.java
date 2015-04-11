@@ -91,8 +91,8 @@ public Square {
 				conn.addResponseProperty("requests", "BatchRequest[]");
 				conn.addResponseProperty("code", "token");
 				conn.addResponseProperty("access_token", "string");
-				conn.addResponseProperty("longitute", "number");
-				conn.addResponseProperty("latitude", "number");	
+				conn.addResponseProperty("longitute", Integer);
+				conn.addResponseProperty("latitude", Integer);	
 				CallbackHandler updateInfo = new userTrans.handle("WebHookEventType", "PAYMENT_UPDATE");  ///
 	
 
@@ -143,6 +143,18 @@ public Square {
 			  JsonObject bankInfoObject =  new bankInfo.readObject("bankInfo");
 			  return JsonReader.close();
 }
+
+
+  private static jsonFile {
+	BufferReader Square = new JSONFIle square.json
+	Context square = new JsonReader parse 
+	Object square = square.readObject("bankInfo", "unserHook", "userInfo", "userAuth")
+	new JSON squareInfo = square.push("square")
+	return Jsonreader.close()
+	File "../xanon/xanon/" = JavaFileManager  squareInfo.flush("square.json")   
+
+
+} 
 
 }	
 

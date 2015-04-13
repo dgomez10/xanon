@@ -46,6 +46,7 @@
 	Accept: application/json
 	Content-Type: application/json
 	Link:<https://connect.squareup.com/v1/me/payments?batch_token=BATCH_TOKEN>;rel='next'>
+	Link:<https://api.nexmo.com/verify/json>;rel='next'> 
 
      	Accept         = "Accept" ":"
                         #( media-range [ accept-params ] )
@@ -56,6 +57,33 @@
        	accept-params  = ";" "q" "=" qvalue *( accept-extension )
        accept-extension = ";" token [ "=" ( token | quoted-string ) ]
        User-Agent = "User-Agent" : token [ "=" ( X-Pusher-Key || X-Pusher_Signature | String ) ]
+
+	Request		= "Request-line" ":"
+			  *(( general-header
+			   | request-header
+			   | entity-header ) CRLF)
+			    CRLF
+			    [api_key api_secret number brand sender_id ip_address]
+	
+	Response 	= "Response-Line" ":"
+			  *(( general-header
+			   | request-header
+			   | entity-header ) CRLF)
+			    CRLF
+			    [api_key api_secret number brand sender_id ip_address]
+	Content-Type	= "Content-Type" ":"
+			   *(( general-header
+				) CRLF)
+			     CRLF
+				[from to type text client-ref network-code body udh]
+	Message-Send	= "Message-Send" ":"
+			  *(( general-header
+				) CRLF )
+			   CRLF 
+				[ type, to, msisdn, messgeId, message-timestamp, text, keyword, data, udh]
+
+			
+	
 
 
   </head>

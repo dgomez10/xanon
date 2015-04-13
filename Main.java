@@ -14,18 +14,16 @@ import java.HTTPClient.*
 
 
 public class Main extends HttpServlet {
-  @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-      throws ServletException, IOException {
+  @Link 
+  protected void Get(HTTPConnectionRequest con, HttpConnectionResponse resp)
+     new HTTPConnectionRequest = 
+	
 
-    if (req.getRequestURI().endsWith("/endpoint?oauthtoken=t")) {
-      showDatabase(req,resp);
-    } else {
-      showHome(req,resp);
-    }
-  }
 
-  public void doPOST(HTTPServletRequest req, HTTPServletResponse resp)
+	 throws ServletException, IOException {
+
+
+  public void POST(HTTPServletRequest req, HTTPServletResponse resp)
 	throws ServletException, IO Exception {
 	  if (req.getRequestURI().endwith("/users")) {
 		showDatabase(req, resp);
@@ -50,7 +48,7 @@ public class Main extends HttpServlet {
 				"Gender" : Gender.get(),
 				"Age" : Age.get(),
 				"Language" : Language.get(),
-				"geo_location" : geo_location.get(), 
+				"" : geo_location.get(), 
 	}
 	}
 		JsonReader userInfo = new Json.createReader("userInfo");
@@ -87,16 +85,6 @@ public class Main extends HttpServlet {
 
 }
 
-}
-  private void showHome(HttpServletRequest req, HttpServletResponse resp)
-      if (req() >= 300) {
-	 throws ServletException, IOException {
-    	resp.getWriter().print("We weren't able to get your information.");
-      else 
-	Context dbConnection.get(); 
-
-
-  }
 
   private void showDatabase(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {

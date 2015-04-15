@@ -1,0 +1,14 @@
+--- 
+
+
+tasks : 
+
+	repo : "git branch master"
+	-inlude : "../xanon/travis.yml"	
+	-command : "push -u orgin master "
+	
+	-run "connect Travis CI" {
+		-include check_token={verify : [Token: QuJGykMBa1ybhvegqcZt]}			
+		-command  check_token
+		
+}

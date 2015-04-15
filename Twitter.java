@@ -20,35 +20,52 @@ public Twitter {
   public static main(String[] args){
 	//initial HTTPRequests CilentManager Connect to ResourceOWNER Auth Request
 	//MUST handle connect to AUth Server and ResourceSERVER 
-	HTTPClientManager twitterClient = new HTTPConnectionRequest openURLConnection("").connection.getHeader("Twitter").setReequestProperty("POST")
-	KeyPairGenerator twitterRSA = twitterClient.getInstance(//twitter_idHeader) 
+	HTTPPooledClientManager twitterClient= new HTTPConnectionRequest conn.openURLConnection("").getHeader("Twitter").setRequestProperty("POST")
+	HttpContext twitterInfo = twitterClient.log.getId("twitter-handle").getHeader()
+	KeyPairGenerator twitterRSA = twitterClient.getInstance() 
 	twitterRSA.initialize()
 	KeyPair twitterKeys = twitterRSA.getPublic().getPrivate()
 	SSLConnectionSocketFactory twitterSSL =  twitterClient.(SSLContext twitterSSLContext)
+	PrivateKeyStrategy saveTwiterKeys =  twitterKeys.(.saveToFile("private.key", "public.key", twitterRSA.toModulus.().toExponent())
+	BufferedStream  twitterOutput = new BufferedReader saveTwitterKeys.getInputStream().finalize("private.key", "public.key")
+	FileReader twitterFlush = Handler twitterOutput.flush("public.key", "private.key")
 	//success/fail Grant
 	if (twitterClient > 300) {
-		alert("Error Received " + twitterClient.getCause())	
+		alert("Error Received " + twitterClient.getCause())
 		throws InvalidCredentialsException ClientProtocolExpception ProtocolException MalformedChallengeException
 	else
-		Credentials verifiy = twitterClient.getprocessChallenge(Header "Twitter")
+		Credentials verifiy = twitterClient.isGrant(true).getprocessChallenge(Header "Twitter")
 		if (verify == true) {
 		  alert("Sign-up Works" + verify.getUserToken("id_str"))
 
 }
 		
 }
-
 	//open Socket
-	//create Handler
-	
+	SSLConnectionSocketFactory twitterSocket = twitterClient.createSocket(twitterContext  "https://www.api.twitter.com/oauth2/token" int 8080 )
+	Sockcet twitterHandshake = twitterSocket.startHandshake()
+		if ( twitterHandshake  == false) {
+			throws IllegalArguementException 
+		else 
+		  twitterSocket.connectSocket( InetAddress 10.106.254.140)	
+}  	//CallbackHandler
+	CallbackHandler twitterHandler =  
 	//sends requestfor RefreshToken
-		//success //fail
+	  	ScheduledThreadPoolExecutor<V> twitterThread = .isDaemon(new Daemon() twitterDaemon)
+		Runnable twitterRun =  twitterSocket.setDaemon.execute("twitterSocket")
+		//success/Fail 
+		if (twitterRun = twitterSocket.conn.isGrant(true)) {
+			for (){
+	 twitterClient.start().scheduleWithFixedDelay(runTime)getUserToken.getHeader("Twitter")
+			else throws IllegalArguementException
 }
-
+}
+		
  public static twitterVerify
 	//AuthServer
 	@threadsafe AuthScheme twitteAuth = create(HTTPContext twitterAuth)
-	Credentials twitterHandle = twitterAuth.getUserPrincipal("")
+	Credentials twitterHandle = twitterAuth.getUserPrincipal()
+	
 	//oAuth user
 	//connect Success
 	//TokenFail 

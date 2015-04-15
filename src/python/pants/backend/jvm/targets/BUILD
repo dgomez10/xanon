@@ -1,0 +1,75 @@
+
+python_library(
+  name = 'all',
+  dependencies = [
+    ':jvm',
+    ':java',
+    ':scala',
+  ],
+)
+
+python_library(
+  name = 'jvm',
+  sources = [
+    'benchmark.py',
+    'credentials.py',
+    'exclude.py',
+    'exportable_jvm_library.py',
+    'import_jars_mixin.py',
+    'jar_dependency.py',
+    'jar_library.py',
+    'jarable.py',
+    'jvm_app.py',
+    'jvm_binary.py',
+    'jvm_target.py',
+    'unpacked_jars.py',
+  ],
+  dependencies = [
+    '3rdparty/python:six',
+    '3rdparty/python/twitter/commons:twitter.common.collections',
+    '3rdparty/python/twitter/commons:twitter.common.dirutil',
+    'src/python/pants/backend/core/targets:common',
+    'src/python/pants/base:address_lookup_error',
+    'src/python/pants/base:build_environment',
+    'src/python/pants/base:build_manual',
+    'src/python/pants/base:exceptions',
+    'src/python/pants/base:payload',
+    'src/python/pants/base:payload_field',
+    'src/python/pants/base:target',
+    'src/python/pants/base:validation',
+    'src/python/pants/util:meta',
+  ],
+)
+
+python_library(
+  name = 'java',
+  sources = [
+    'annotation_processor.py',
+    'java_agent.py',
+    'java_library.py',
+    'java_tests.py',
+  ],
+  dependencies = [
+    ':jvm',
+    '3rdparty/python:six',
+    'src/python/pants/base:exceptions',
+  ],
+)
+
+python_library(
+  name = 'scala',
+  sources = [
+    'scala_library.py',
+    'scala_tests.py',
+    'scalac_plugin.py',
+  ],
+  dependencies = [
+    ':jvm',
+    '3rdparty/python/twitter/commons:twitter.common.collections',
+    'src/python/pants/backend/jvm/scala:target_platform',
+    'src/python/pants/base:address',
+    'src/python/pants/base:exceptions',
+    'src/python/pants/base:target',
+    'src/python/pants/base:validation',
+  ],
+)

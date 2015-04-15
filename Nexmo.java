@@ -10,7 +10,9 @@ import java.io.BufferedeReader;
 import java.io.InputStreamReader;
 import com.nexmo.messaging.sdk.*; 
 import org.apache.directory.server.OPERATION_LOG;
-import org.apache.http.*
+import org.apache.http.*;
+import java.sql.*;
+
 
 public Nexmo {
 

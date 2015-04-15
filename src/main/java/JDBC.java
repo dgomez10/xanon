@@ -4,8 +4,7 @@ import java.sql.*;
 public class JDBC {
    // JDBC driver name and database URL
    static final String JDBC_DRIVER = "com.postgresql.jdbc.Driver";  
-   static final String DB_URL = dbUri.getHost() + dbUri.getpath();  //Change once VM is set up  
-
+   static final String DB_URL = dbUri.getHost() + dbUri.getpath(/);
    //  Database credentials
    static final String USER = "userId";
    static final String PASS = "password"; //long-lived access token 
@@ -49,5 +48,8 @@ public class JDBC {
       }//end finally try
    }//end try
    System.out.println("Goodbye!");
-}//end main
-}//end JDBCExample
+}
+}
+
+
+

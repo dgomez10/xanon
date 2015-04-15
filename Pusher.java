@@ -6,6 +6,7 @@ import java.io.*;
 import org.apache.jdbc.*;
 import com.dbaccess.BasicDataSource;
 import org.apache.directory.server.OPERATION_LOG;  
+import java.sql.*;
 
 
 

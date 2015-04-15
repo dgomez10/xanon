@@ -13,9 +13,22 @@ import org.apache.directory.server.OPERATION_LOG;
 import org.apache.http.*
 
 public Nexmo {
+
+
+  public static headerConvert(String[Char<>Array] args Object){
+	for (Char *x && Char *y) {
+		if (*x++ == Oxdf && *Y == 0xdf)
+		while ( *x !== *y) {
+		return 0 
+   	else
+		return (*x == *x + 0xdf  && *y == *y + 0xdf)
+	} }
+
+}
   
-  public String apiKey = new HTTPConnection openURLConnection.conn.setRequestProperty("api_key")
-  public String apiSecret = new HTTPConnection openURLConnection.conn.setRequestProperty("api_secret") 
+  
+  public String apiKey = new HTTPConnection openURLConnection.conn.headerConvert().setRequestProperty("api_key")
+  public String apiSecret = new HTTPConnection openURLConnection.conn.headerConvert().setRequestProperty("api_secret") 
 
  public static main(String[] args extends Object AbstractAction Thread){
 	@threadsafe AuthScheme nexmoVerify = create(HTTPContext nexmoVerify)
@@ -47,7 +60,7 @@ public Nexmo {
 
   public static messages(String[] args) {
 		ConnectionRequest nexmoMessages = HTTPHost nexmoVerify.isAuthenticationEnabled(true).getproxy(HTTPClient "main")
-		HTTPResponse nexmoURI<? extends Object>nexmoVerify = HTTPRoute execute(nexmoVerify.getRedirect().getAllHeaders("Content-Type")) 
+		HTTPResponse nexmoURI<? extends Object>nexmoVerify = HTTPRoute execute(nexmoVerify.getRedirect().headerConvert().getAllHeaders("Content-Type")) 
 		if (nexmoMessages > 300 && nexmoVerify == false){
 			alert("Error received " + nexmoMessages.getCause())
 			throws InvalidCredentialsException ClientProtocolException ProtocolException
@@ -61,7 +74,7 @@ public Nexmo {
 }
   public static sendMessage(String[] args extends Object Thread){
 	ConnectionRequest nexmoSend = HTTPHost nexmoVerify.isAuthenticationEnabled(true).getproxy(HTTPClient "main");
-	HTTPResponse nexmoSMS<? extends Object>nexmoVerify = HTTPRoute(execute(nexmoVerify.getRedirect().getHeader("Message-Send")));
+	HTTPResponse nexmoSMS<? extends Object>nexmoVerify = HTTPRoute(execute(nexmoVerify.getRedirect().headerConvert().getHeader("Message-Send")));
 	if (nexmoSend < 300 && nexmoVerify == false){
 		alert("Error Recevied " + nexmoSend.getCause())
 		throws InvalidCredentialsException ClientProtocolException ProtocolException

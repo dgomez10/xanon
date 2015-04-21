@@ -65,9 +65,8 @@
 	user-handle 	= ( 1*name-char) 
 	name-char	=  ("-" / "." / "_" / DIGIT / ALPHA )
 	param-name	= (1*name-char)
-
-	Host: api.twitter.com
-	User-Agent: My Twitter App v1.0.23
+	pct-encoded = "%" HEXDIG HEXDIG
+	User-Agent: X v1.0.23
 	Authorization: Client 
 	Content-Type: application/x-www-form-urlencoded;charset=UTF-8
 	Content-Length: 64

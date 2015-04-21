@@ -1,7 +1,7 @@
 import javax.security.auth.callback; 
 import java.util.*; 
-import java.HTTPClient.*
-import com.dbaccess.BasicDataSource
+import java.HTTPClient.*;
+import com.dbaccess.BasicDataSource;
 import org.json;
 import javax.json;
 import java.lang.Object;
@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public Square {
+public Square extends Object {
 	public static void main(String[] args) {
 	  @link HTTPConnectionRequest auth = new HTTPConnection ("https://connect.squareup.com/oauth2/authorize?client_id=n4ytXJUjnzWP_733L60i1Q&response_type=token");
 		if (auth() >= 300) {

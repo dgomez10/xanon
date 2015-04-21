@@ -49,10 +49,19 @@
        User-Agent = "User-Agent" : token [ "=" ( X-Pusher-Key || X-Pusher_Signature | String ) ]
 
 	
-	POST /oauth2/token HTTP/1.1
+	
 	Twitter		= "Accept" ":"
 			#(type-name name-char param-name [accept-params])
-	Host:<https:"//">
+	Authorization	= "AUthorization : Oauth qvalue *["/" (U+002F)
+				(oauth-consumer-key: "/" String; 
+				 oauth_consumer_secret: "/" String; 
+				 oauth_nonce: "/" String; 
+				 oauth_signature_method: "HMAC-RC4" ;
+				 oauth_timestamp: "/" Integer; 
+				 oauth_token: "/" String; 	
+				)
+				] 
+	Host:<"https://api.twitter.com">
 	user-handle 	= ( 1*name-char) 
 	name-char	=  ("-" / "." / "_" / DIGIT / ALPHA )
 	param-name	= (1*name-char)
@@ -63,6 +72,7 @@
 	Content-Type: application/x-www-form-urlencoded;charset=UTF-8
 	Content-Length: 64
 	Accept-Encoding: gzip
+	grant_type=cient_credentials 
 				
 
 )  

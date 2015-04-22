@@ -1,6 +1,6 @@
 import java.util; 
-import java.net.URL
-import org.json
+import java.net.URL;
+import org.json;
 import javax.HTTPConnection; 
 import java.util.*;
 import java.security.auth.callback;
@@ -22,11 +22,11 @@ import javax.crytpo.spec.*;
 
 
 
-public Twitter {
-  public static main(String[] args){
+public class Twitter {
+  public static void main(String[] args){
 	//initial HTTPRequests CilentManager Connect to ResourceOWNER Auth Request
 	//MUST handle connect to AUth Server and ResourceSERVER 
-	HTTPPooledClientManager twitterClient= new HTTPConnectionRequest conn.openURLConnection("https://www.api.twitter.com/oauth2/token").getHeader("Twitter").setRequestProperty("POST")
+	PoolingHttpClientConnectionManager twitterClient= new HTTPConnectionRequest [this.requestConnection(HttpHost "https://www.api.twitter.com/oauth2/token").getHeader("Twitter").setRequestProperty("POST")];
 	URLEncoder twitterEncode = twitterClient.getAllHeader()
 	for (twitterEncode == true) {
 		utf = twitterEncode.getPercentEncode().encode(String Hex: "0X30-0X7A")

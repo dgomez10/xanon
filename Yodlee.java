@@ -1,18 +1,31 @@
 
-
-import java.HTTPClient.*
-import java.util.*
-import com.dbaccess.BasicDataSource
-import org.json
-import javax.json
-import java.lang.Object
-
+import java.util; 
+import java.net.URL;
+import org.json;
+import javax.HTTPConnection; 
+import java.util.*;
+import java.security.auth.callback;
+import java.HTTPCLient.*;
+import com.dbaccess.BasicDataSource;
+import org.json;
+import javax.json; 
+import java.lang.Object;
+import java.io.BufferedeReader;
+import java.io.InputStreamReader;
+import java.io.*;
+import com.nexmo.messaging.sdk.*; 
+import org.apache.directory.server.OPERATION_LOG;
+import org.apache.http.*;
+import java.sql.*;
+import java.security.*; 
+import javax.crytpo.*; 
+import javax.crytpo.spec.*; 
 
 
 public Yodlee {
 
   public void static () {
-	@link HTTPConnectionRequest yodlee = new HTTPConnection ("https://rest.developer.yodlee.com/services/srest/restserver/v1.0​/authenticate/coblogin?cobrand_id=10010352") 
+	@link PoolingHttpConnectionClient yodleeAuth = HTTPConectionRequest this.getConnectionConfig("https://rest.developer.yodlee.com/services/srest/restserver/v1.0​/authenticate/coblogin?cobrand_id=10010352") 
 		if (yodlee() >= 300){
 			System.err.println("Received Error: " + yodlee.getReasonLine())
 }

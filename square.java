@@ -12,8 +12,8 @@ import java.net.URL;
 
 public Square extends Object {
 	public static void main(String[] args) {
-	  @link HTTPConnectionRequest auth = new HTTPConnection ("https://connect.squareup.com/oauth2/authorize?client_id=n4ytXJUjnzWP_733L60i1Q&response_type=token");
-		if (auth() >= 300) {
+	@link PoolingHttpClientManager squareAuth = ConnectionConfig [this.getConnectionConfig("https://connect.squareup.com/oauth2/authorize?client_id=n4ytXJUjnzWP_733L60i1Q&response_type=token")];
+		if (squareAuth() >= 300) {
 		 System.err.println("Received Error" + auth.getReasonLine() )
 		throw IOException
 		}
@@ -24,11 +24,11 @@ public Square extends Object {
 			code : "token"
 			expires_at : "string"
 			}
-		  userAuth.conn.setRequestMethod("POST"); 
-		  userAuth.conn.setRequestMethod("GET"); 
-		  userTrans.conn.setDoInput(true);
+		  this.userAuth.conn.setRequestMethod("POST"); 
+		  this.userAuth.conn.setRequestMethod("GET"); 
+		  this.userTrans.conn.setDoInput(true);
 		  JsonReader userAuth = new Json.createReader("userAuth");
-		   JsonObject userAuthObject = new userAuth.readObject();
+		  JsonObject userAuthObject = new userAuth.readObject();
 		  return jsonReader.close();
 }
 

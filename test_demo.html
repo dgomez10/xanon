@@ -60,7 +60,14 @@
 				 oauth_timestamp: "/" Integer; 
 				 oauth_token: "/" String; 	
 				)
-				] 
+				]
+	TimeLime	 = "Timeline : *["/" (U+002F)
+				(
+				
+
+				)
+]
+ 
 	Host:<"https://api.twitter.com">
 	user-handle 	= ( 1*name-char) 
 	name-char	=  ("-" / "." / "_" / DIGIT / ALPHA )
@@ -126,16 +133,16 @@
 </script>
 
 <script>
+//intialize G-Maps
 function initialize() {
-	
-	var initialize = document.getElement('initialize')
+  var initialize = document.getElement('initialize')
   var mapOptions = {
     zoom: 15,
     center: new google.maps.LatLng(37.335998,-121.8855781)
   };
 	if (mapOptions == true){
-	//loa json
-	var finance_info = ioService.get('tansactionID')document.createElement('expense').Json.parse.stringify('yodlee');
+	//load JSON
+	var finance_info = ioService.get('Invoice ID') {document.createElement('expense').Json.parse.stringify('square')};
 	var mapit = new google.maps.map.ioService.get('GeoLocation').eventaddDomListener(window, 'expense', initialize);
   	var map_coor = new google.maps.map.data.GeoJsonOptions.getFeatureById('mapit');
   	//use only transactionID, and location

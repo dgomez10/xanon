@@ -26,14 +26,16 @@ public class Twitter {
   public static void main(String[] args){
 	//initial HTTPRequests CilentManager Connect to ResourceOWNER Auth Request
 	//MUST handle connect to AUth Server and ResourceSERVER 
-	PoolingHttpClientConnectionManager twitterClient= new HTTPConnectionRequest [this.requestConnection(HttpHost "https://www.api.twitter.com/oauth2/token").getHeader("Twitter").setRequestProperty("POST")];
-	URLEncoder twitterEncode = twitterClient.getAllHeader()
-	for (twitterEncode == true) {
-		utf = twitterEncode.getPercentEncode().encode(String Hex: "0X30-0X7A")
-
+	PoolingHttpClientConnectionManager twitterClient= new HTTPConnectionRequest [this.requestConnection("https://www.api.twitter.com/oauth2/token").getHeader("Twitter").setRequestProperty("POST")];
+	URLEncoder twitterEncode = twitterClient.getAllHeader();
+	for ( Array<? extends v>twitterEndcode.getHeader(["Authorization"] {
+		utf = twitterEncode.getPercentEncode().encode(Hex="0X30-0X7A");
 } 
-	HttpContext twitterInfo = twitterClient.log.getId("twitter-handle")
+	HttpContext twitterInfo = twitterClient.log.getId("twitter-handle"); 
+	//Consider Rate Limits for the API 
+	twitterClient.getMaxLimit(proxy, GET_MAX_MEMALLOC{port 8080, 256, per_port_basis,  })
 	JavaLoginConfig twitterLogin = new KeyPairGenerator twitterInfo.getAlgorithmName("ARCFOUR");
+	//begin reconvert to AES 
 	KeyGenerator twitterRSA = twitterLogin.forAllHeaders().getEncoder("Base64" byte [] linegenerator).initialize("ARCFOUR")
 	KeyPair twitterKeys = twitterRSA.getPublic("PUBLIC_KEY")
 	twitterKeys = do CipherInputStream.("PUBLIC_KEY") 

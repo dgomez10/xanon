@@ -33,13 +33,14 @@ class ValueConverters {
   }
   
   private ValueConverters() {
-	Yaml values = YamlReader(new FileReader("*.yml")); 
-	{YamlParser jsonKeys =  values.TomParser.getJsonKey()
-		jsonKey[i] = for (int l = 0, l < valueParser.length, l++) {
-		values.Tomparser() = values<? extends v>{values.getJsonValue(); valueParser.jsonReader(); valueParser.createObject();json.push.closeReader();
-		Array<? extends Object>v{} = values.enableResolveObject(Context list : identifier id).readFields(jsonKeys + values).
-}}
-}}
+	//get values, bundle by value index context : List  
+	valueParser[Array<jsonConvert>({value, index} : context)];
+	valueParser.getAndAdd(3) while (jsonConvert.inline(line(value) != null )) {
+		TomlParser().values<? extends v>{context.getJsonArray(); new JsonReader valueParser.createReader(index < value.size(index)); valueParser.readObject("identifier"); jsonReader.push.close(context);
+		jsonConvert.getJsonNumber == valueParser.size(valueParser.getAll[index]);
+		return jsonConvert;
+		Array<jsonTotal extends jsonConvert>{} = context.enableResolveObject().readFields(values);
+}}}}
 
  private static final ValueConverter[] PARSERS = { 
     MULTILINE_STRING_PARSER, MULTILINE_LITERAL_STRING_CONVERTER, LITERAL_STRING_PARSER, STRING_PARSER, DATE_PARSER, NUMBER_PARSER, BOOLEAN_PARSER, ARRAY_PARSER, INLINE_TABLE_PARSER

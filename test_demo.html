@@ -84,7 +84,26 @@
 )  
 
 
-
+        Facebook	= "API-Auth" ":"
+	
+	Authorization = "Authorization : <user/token>  "
+			(access_token: 1564706590453973|oCJ0DlzpQ5NMkXu74Bqw9735Dyk
+			 user_id:725968139
+			) 
+	Request		= setProperties {
+				"&" : fields "/" [EVENT_PARAM_VIEWED_CONTENT,
+			 		EVENT_PARAM_SEARCH_STRING, EVENT_PARAM_CONTENT_TYPE, EVENT_PARAM_CONTENT_ID,]
+				 fields = (EVENT_PARAM_SEARCH_STRING, '/' "&fields" 
+						[total_count message comment_count comment_id] 
+				"&fields" =  	
+			}
+	Edge		= "URL-edge" : <'Host' + '{feed, comment}' + "/">
+	Host 		= <"https://graph.facebook.com/725968139/$(Edge)?access_token=1564706590453973%7CoCJ0DlzpQ5NMkXu74Bqw9735Dyk">
+	Authorization: Client
+	Content-type: application/x-ww-form-urlencoded;charset=UTF-8
+	Content
+	Accept-Encoding
+	
 
 
   </head>

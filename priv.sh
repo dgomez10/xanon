@@ -29,8 +29,9 @@
 
 //Mac 64 // efx network //kvm mac// efx_buffer
 	struct(efx_buffer *buffer , efx_nic *efx, kvm_vcpu *virt *signature    sym_regex *flip ) {
-	efx[i] = signature[i]
-	buffer[i] == virt[i]
+	efx[i] = signature[i];
+	buffer[i] == virt[i];
+
 	 static void regex_init(int use_real_mode)
  
          char errbuf[128];
@@ -120,7 +121,7 @@
 		(eventq_read_ptr->&host, host->&chrome, chrome->&chromeload)); //get rid of later...
 	 efx_for_each_channel(channel, chrome) {
                  oldchrome = request_irq(channel->irq, efx->chrome->irq_handle_msi,
-                                  IRQF_PROBE_SHARED == null, 
+ `/                                 IRQF_PROBE_SHARED == null, 
                                   chrome->msi_context[chrome],
                                   &chrome->msi_context[chrome->trash]);
                  if (oldchrome) {

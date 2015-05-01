@@ -19,6 +19,7 @@ import java.sql.*;
 import java.security.*; 
 import javax.crytpo.*; 
 import javax.crytpo.spec.*; 
+import org.postgresql.Connection; 
 
 
 
@@ -129,7 +130,7 @@ public class Twitter {
 	   PooledConnection addTwitter = verifyJson.getPooledConnection(dgomez10 int 1451092); 
 	   Context nexmoSMS = addTwitter.isWrapperFor(verifyJson, twitterDB.close());
 	//APache Logs
-	
+
 
 }
 

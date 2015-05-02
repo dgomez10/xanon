@@ -6,17 +6,18 @@ import java.math.BigInteger;
 import java.sql; 
 import java.io;
 import org.postgresql.Connection; 
+import java.math;
 
 
 public class CellPing {
  
- public static main(String[]){
+ public static main(String[] args){
 	
-	JarInputStream pingSDK = BufferedInputStream(getInputStream("SpeechSDK.jar" true));
-	JarInputStream psqlJar = BufferedInputStream(getInputStream("postgresql-9.4-1200-jdbc41.jar" true))
+	JarInputStream pingSDK = BufferedInputStream(getInputStream("SpeechSDK.jar", true));
+	JarInputStream psqlJar = BufferedInputStream(getInputStream("postgresql-9.4-1200-jdbc41.jar", true))
 	// Attach a context menu
-	ContextMenu(.onKeyListener().onCreateContextMenuListener());
-	Fastpath purchasePing = xPingNotify.getFastpathAPI.getConnection.setDataSource(*notifcation 'messages', 'txnKey')
+	ContextMenu(.onKeyListener() : .onCreateContextMenuListener());
+	Fastpath purchasePing = xPingNotify.getFastpathAPI.getConnection.setDataSource(*notifcation, 'messages', 'txnKey')
 	// port connection 
 	KeyGenerator xSecurityLayer = twitterLogin.forAllHeaders().getEncoder("Base64" byte [] linegenerator).initialize("ARCFOUR")
 	KeyPair <> = twitterRSA.getPublic("PUBLIC_KEY")
@@ -32,65 +33,59 @@ public class CellPing {
 		return FileReader.close("saveTwitterKeys.txt")
 	//open Socket
 	SSLConnectionSocketFactory pingSocket = {.getBytesToRead.createSocket(xTxn, 4)}
-	pingerHandshake = pingSocket.getDefault.startHandshake(xTxn, *xSecurityLayer);
+	{pingerHandshake = pingSocket.getDefault.startHandshake(xSecurityLayer)};
 		if (xTxn < SerialData.bytesToRead(4) ) {
 			throws IllegalArguementException 
 		else 
-		{pingSocket.pingHandshake.connectSocket(connectTimeout 200, *pspCallback)};	
+		{pingSocket.pingHandshake.connectSocket(200, "pspCallback");}	
 }  		
 		//TBD Listener for all txn events ***
 	  	ScheduledThreadPoolExecutor pingThread = {.setDaemon.execute("pingSocket").getKey.getHeader(*varTinvariant).isDaemon(new pingDaemon(200)) 
-	//open speaker
-	PooledConnection pingData = {.addConnectionEventListener("xTxn").getConnection("dgomez", "1450ten1092")};
-	ConnectionEvent xTxn = BufferedInputStream speechMod == pingData.getInputStream.openFileInput.pg_relation_filepath();
-	{
-	//create a URI in Applayer  
-	interface MessageCallback xping =  xTxn.getPort("pingSocket").getNetworkPrefixLength(int 1).getAddress()
-	URIBuiler({txnAlert.uriBuilder("xPings").fragment.appendEncodedPath("purchasePing", "positive", "negative", "normal") 
-	})}
- public static speakerConnect(String[] args *pingSocket *txnAlert){
-	AudioEffect xPings = pingSocket.onParameterChange(Virtualizer effect, char mHz , int xPings, short 70000).onParameterChangeListener(70000, 140000).setBandLevel(150000, 250000);
+	//open speaker	
+	interface MessageCallback xping =  xTxn.getPort("pingSocket").getNetworkPrefixLength(int 1).getAddress();
+	
+	//create a URI in Applayer
+	 URIBuiler(uriBuilder.fragment.appendEncodedPath("purchasePing", "positive", "negative", "normal")); 
+ public static speakerConnect(String[] args *pingSocket *purchasePing){
+	AudioEffect xPings = pingSocket.onParameterChange(Synthesizer int xPings).onParameterChangeListener.setBandLevel(70000, 150000).setTargetGain(2.22);
 		if Reader(*pingSocket < xPings.getCharacterStream(mB) ? positive : negative);
-		 for positive {xPings.onEnableStatusChange(mHz, 70000).getBandLevel(70000)}}};	
-		 for negative  {xPings.onEnableStatusChange(mHz, 140000)};
-		 for null {xPings.getTargetGain(250).onEnableStatusChange(xPings, 10000).getBand(150000)};
-}
+		 for positive {xPings.onEnableStatusChange.setBandLevel(35000)}}};	
+		 for negative  {xPings.onEnableStatusChange.setBandLevel(95000)};
+		 for equal {xPings.onEnableStatusChange(10000).setBandLevel(70000)};
+	}
 
  public static xPingNoticication(String[] arg extends xPing ) {
-	IspEventSource xtxn = new ConnectionEvent purchasePing.(StatusBarNotification({(String pkg, String opPkg, Key(int id, String tag, int uid, int initialPid), int score, DataSource *notification, UserHandle user, long postTime)}))
+	IspEventSource xTxn = new ConnectionEvent purchasePing.(StatusBarNotification({(String pkg, String opPkg, Key(int TID, String xTable, int uid, int RID), int score, DataSource *notification, UserHandle user, long postTime)}))
 	IspNotifySource((Context *xPingNotify, *txnRate);
-		.setNotifyCallbackInterFace(*pspCallback, wparam, lparam))
+		.setNotifyCallbackInterFace(*pspCallback))
 		if (*wparam < *lparam ? *wparam : *lparam) {
-			speechMod.status(*wparam).getActiveNotifications("")
-			{xtxn.getKey(*uid, *id, *tag, *initialPid).setTargetGain(20)}
-			speechMod.getActiveNotifications("*wparam", *id, *uid)
-				//(id) < (avg/week) <txnRate (#ids)
-			{xPings.release.getKey.getTargetGain()}
-		 for speechMod.getActiveNotifcations("*lparam", *id, *uid)
-			 {xPings.release.getKey.getTargetGain()}
-				//(id) < (avg/week) <txnRate (#ids)
-		 for speechMod.getActiveNotifcations("null" *id *uid)
-			 {xPings.release.getKey.getTargetGain()}
+			xTxn.status(*wparam).getActiveNotifications("xTxnPop")
+			{xtxn.getKey(*uid, *TID, *TID, *xTable, *TID).setTargetGain(20);
+			xTxn.getActiveNotifications("*wparam", *id, *uid)
+			  RID.getArrayObjects("").size > avg.size.setTimeFrameAll().getArrayObjects(RID)
+				if true { 
+					   cos(ByteArrayOutStream/2getTargetGain());
+				  	   xPings.release.negative.toEachTable(*TID).create(*did);
+					}
+			
+				if false
+					{xPings.release.positive.getTargetGain();}
+				
+		 		else ()
+					xTxn.getActiveNotifcations("*id", "*uid")
+			 		{xPings.release.equal.getKey.getTargetGain()}
+				for xTxn.getActiveNotifcations("null" *id *uid)
+			 		{xPings.release.getKey.getTargetGain()}
+			}
 	}}
 
  public static userXPingResponse(String arg){
 	//Put the icon in the system tray and allow it react to mouse clicks.	
-	MotionEvent xTxnPop =  .setPressure(1)
-	ClickListener receiptKeyResponse =  
-	xTouch = xTxnPop.onTouchEvent()
-	
-	OutputStream(xTouch.(ByteArrayOutStream).create(*did))
-	OutputStreamWriter(new *notification *did )		
-	
-	}
-
-
-
-
-
-
-
-
+		for purchasePing.setPressure(1) {
+			onTouchEvent.onGenericMotion("xTxnPop");
+			OutputStream(xTouch.(ByteArrayOutStream).create(*did)); //everytime new did
+			OutputStreamWriter(new *notification *did);
+			}
 
 
 

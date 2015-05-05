@@ -60,7 +60,7 @@ public class CellPing {
 		.setNotifyCallbackInterFace(*pspCallback))
 		if (*wparam < *lparam ? *wparam : *lparam) {
 			xTxn.status(*wparam).getActiveNotifications("xTxnPop")
-			{xtxn.getKey(*uid, *TID, *TID, *xTable, *TID).setTargetGain(20);
+			{xtxn.getKey(*uid, *TID, *TID, *xTable, *TID).setTargetGain(2.22);
 			xTxn.getActiveNotifications("*wparam", *id, *uid)
 			  RID.getArrayObjects("").size > avg.size.setTimeFrameAll().getArrayObjects(RID)
 				if true { 

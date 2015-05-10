@@ -19,10 +19,10 @@ public static Social{
 
  public static Integrity{
 	HashMap peopleEmotion = [vocalists, brainer, digestors]: InputStream(<'KID'> >> [] :  .getTotal.getHashcode());   
-	HashMap peopleIntegrity = [vocalists, brainer, digestors]: InputStream(<'KID'> >> [] : "trust"); 
-	fault  = digestors.getAverage(k)/total(k) * [M(i)/M(T) - M(T-i)/M(T)]; 
+	HashMap peopleIntegrity = [vocalists, brainer, digestors]: InputStream(HashMap<'KID'> >> [] : "trust"); 
+	fault  = digestors.setId.getAverage(k)/total(k) * [M(i)/M(T) - M(T-i)/M(T)]; //to be calculated
 	
-	evilDigestors = [digestors[i]:fault + digestors[i]:fault + (2fault + 1) + digestors[m]<>Array{digestor.getTotal("trust")/people.getTotal("trust") - ( peopleIntegrity.getTotal() - peopleEmotion.getTotal())} 
+	evilDigestors = BitMap<>[digestors[i]:fault + digestors[i]:fault + (2fault + 1) + digestors[m]<>Array{digestor.getTotal("trust")/people.getTotal("trust") - ( peopleIntegrity.getTotal() - peopleEmotion.getTotal())} 
 	
 	
 

@@ -7,30 +7,35 @@
 #include <aes-cipher.c>
 
 
+#include <stark.h>
+
+
 
 /*Receives and accommodates DH parameters from the server */ 
-
-size_t fread(void *ptr, size_t size, size_t nmemb, FILE *to) {
-	int main()
+int client_mgs2bit(skey , unsigned char* to) {
+struct read_request(const *fpt, size_t *CLIENT_MSG_KEY *SERVER_PROPOSE_KEY, size_t *data)
 {
-   FILE *fp;
-   fp = fopen("bu.c", "w+");
-   fseek(fp, SEEK_SET, 0);
-   char to[];
-   char buffer[80];
-   fread(buffer, strlen(to)+1, 1, fp);
-   printf("%s\n", buffer);
-   fclose(fp);
+   seekdata(data, CLIENT_MSG_KEY, 0);
+   char receive[p0, p1, p2, p3, p4, p6, p6, p7];
+   char buffer[72];
+   /* Read and display data */
+   p1 = read_data(buffer[0],seek(data), &data, 10);
+   p2 = read_data(buffer, seek(data+1), &data, 10);
+   p3 = read_data(buffer, seek(data+1), &data, 10);
+   p4 = read_data(buffer, seek(data+1), &data, 10);
+   p5 = read_data(buffer, seek(data+1), &data, 10);
+   p6 = read_data(buffer, seek(data+1), &data, 10);
+   p7 = read_data(buffer, seek(data+1), &data, 10);
+   struct adrive("%s\n", buffer);
+   aclose(data, 600);
    
-   return(0);
+   return adrive; goto ENCRYPT_KEY; 
 };
-
 
 };
 
 DH* DH_generate_parameters(int prime_len, int generator,
 void (*callback)(int, int, void*), void* cb_arg){
-   DH* DH_new();
 	cb_arg = stnic_eadr[10]
 	generator *g
 		 for (idx = 1, i = 1; idx < 64; ++idx) {
@@ -70,99 +75,31 @@ void (*callback)(int, int, void*), void* cb_arg){
 
 
 /* Generates its public and private keys*/ 
-
-int DH_generate_key(DH* dev) {
-    int             ret = 0;
-    RSA             *priv_key = DH_GENERATE_KEY_2 e DH_GENERATE_KEY_5;
-    BIGNUM          *bn = BN_num_bytes;
-    PUB             *p = BIGNUM* g;
- 
-    int             bits = 2048;
-    unsigned long   e = RSA_F4;
- 
-    bn = BN_new();
-    ret = BN_set_word(bn,e);
-    if(ret != 1){
-        goto free_all;
-    }
- 
-    priv_key = RSA_new(){
-    ret = RSA_generate_key_ex(priv_key, bits, bn, p);
-    if(ret != 1){
-        goto free_all;
-    }}
- 
-    p_pubkey = BIO_new_file("id_rsa.pem", "w+"){
-    ret = PEM_write_bio_RSAPublicKey(p, bn);
-    if(ret != 1){
-        goto free_all;
-    }}
- 
-    p_privkey = BIO_new_file("id.pem", "w+"){
-    ret = PEM_write_bio_RSAPrivateKey(priv_key, bn, e, 0, bits, dev)};
- free_all:
- 
-    BIO_free_all(p_pubkey);
-    BIO_free_all(p_privkey);
-    RSA_free(r);
-    BN_free(bne);
- 
-    return (ret == 1);
-}
- 
-int main(int DH*, char* key["p_pubkey", "p_privkey"]) 
-  	{
-    generate_key();
-        return 0;
-	if int DH != 0
-	return null 
-	else 
-		dh->p_pubkey
-		dh->p_privkey
-	}
-
-Typedef struct dh_st{
-	DH* DH_new();
+Typedef struct client_st{
 };	
-	DH* priv_key{// private parameter (DH value x)
-		x = DH_GENERATE_KEY_2
-		
+	CLIENT_MSG_KEY* snail_slime{// private parameter (DH value x)
+		static inline int aac_valid_context(struct *fib_alloc, struct *fib_entry, int *fib) {
+		fib_alloc->NIC_ALIGN_SOCKET;
+		fib_drive = fib_bus->in; 
+         	if (fib_alloc->true) && (fib_drive == true) {
+                 static inline &aac_fib_complete(fib);
+                 static inline &aac_fib_free(fib);
+                 return fib_queue("fib");
+         	}} 
+         	struct aac_config_stat(fib, sizeof fib_bus, DIFFUSIONKERNEL, fib_adapter,1, 1)
+                  if ( fib_adapter = 1)
+                      fib_send("fib");
+                 } else if (fib_adapter = 0) {
+                         printk("fib_config Others configurations ignored\n");
+                 }		
 	}; 	
-	DH* pub_key{ // public parameter (DH value g^x)
-		g^x = DH_GENERATE_KEY_2 e DH_GENERATE_KEY_5
-
-	}; 
-	// ohm
-	int DH_num_bytes(const DH* dh) {
-		void binary(int);
-		void main(void) {
-		int bn;
-		cout << 80;
-		cin >> dh;
-		if (cin < 0) 
-		cout << "Errors.\n";
-		else {
-		cout << number << " converted to binary is: ";
-		binary(cin);
-		cout << endl;
-		}
-		}
-
-		void binary(int cin) {
-		int remainder;
-
-		if(cin <= 1) {
-		cout << cin;
-		return cout;
-		}
-
-		remainder = dh%2;
-		binary(DH >> 1);    
-		cout << remainder;
-		}
-};
+	DH* pub_key{ // public/private parameter
+		int x = client_generate_msg_2;
+		int y = client_generate_msg_5;
+		int z = client_generate_msg_2 e client_generate_msg_5;
+	};
 	
-	void DH_free(DH* len) {
+	void client_free(SERVER_MSG_KEY* len) {
 		  void reverse(len){
 			binary<len/10>::value << 1 | len % 10;
 			int len;
@@ -174,35 +111,8 @@ Typedef struct dh_st{
 			}
 		}
 };
-	int DH_bn2bin(const DH* dh, unsigned char* to){
-		void binary(dh);
-		void main(to) {
-		int bn;
-		to << 80;
-		to >> dh;
-		if (to < 0) 
-		bn << "Errors.\n";
-		else {
-		bn << number << " converted to binary is: ";
-		binary(80);
-		to << endl;
-		}
-		}
 
-		void binary(int to) {
-		int remainder;
-
-		if(to <= 1) {
-		to << bn;
-		return to;
-		}
-
-		remainder = BIGNUM%2;
-		binary(BIGNUM >> 1);    
-		to << remainder;
-	}
-
-	DH* DH_bin2bn(const unsigned char* s, int len,
+	client_msg2bits(const unsigned char* s, int len,
 DH* ret) {	
 		void BN_free(DH* len) {
 		 void reverse(len){
@@ -214,8 +124,8 @@ DH* ret) {
 			else (len > 80) {
 				return len - 80 
 			}
-		}
-}}};
+		};
+
 
 
 int DH_compute_key(unsigned char* symmetric, const u8 BIGNUM* DH* ret) {

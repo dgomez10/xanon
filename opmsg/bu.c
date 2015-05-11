@@ -1,68 +1,81 @@
 
 
-#include <openssl/dh.h>
-#include <openssl/bn.h>
-#include <linux/crypto/cast6.c>
-#include <dhpriv.c>
+
+#include <bu.c>
+#include <diffusion.h>
 
 
-
-static inline LOAP_OP(int I, u64 *W, const u64 *cyrpto_ft_tab)
+static inline OP_CS_KEYS(int *key, u64 *W, const u64 *emotion_enc_alg)
 {
 	W[I] = __be64_to_cpu( ((__be64*)(input))[I] );
 }
 
-static void aes256_transform(u64 *state, const u8 *input)
+static void eea_tfm(const u8 *input)
 {
 	for(i = 0; i< 32; i++)
-		LOAD_OP(i, W, cyrpto_ft_tab);
+		LOAD_OP(i, W, emotion_enc_alg);
 
 }
-int BN_bn2bin(const BIGNUM* , unsigned char* to) {
-
-size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream) {
-	int main()
+int server_prps2bin(skey , unsigned char* to) {
+struct read_request(const *fpt, size_t *CLIENT_MSG_KEY *SERVER_PROPOSE_KEY, size_t *data)
 {
-   FILE *fp;
-   fp = fopen("bu.c", "w+");
-   /* Seek to the beginning of the file */
-   fseek(fp, SEEK_SET, 0);
-   char to[];
-   char buffer[80];
+   seekdata(data, CLIENT_MSG_KEY, 0);
+   char receive[p0, p1, p2, p3, p4, p6, p6, p7];
+   char buffer[72];
    /* Read and display data */
-   fread(buffer, strlen(to)+1, 1, fp);
-   printf("%s\n", buffer);
-   fclose(fp);
+   p1 = read_data(buffer[0],seek(data), &data, 10);
+   p2 = read_data(buffer, seek(data+1), &data, 10);
+   p3 = read_data(buffer, seek(data+1), &data, 10);
+   p4 = read_data(buffer, seek(data+1), &data, 10);
+   p5 = read_data(buffer, seek(data+1), &data, 10);
+   p6 = read_data(buffer, seek(data+1), &data, 10);
+   p7 = read_data(buffer, seek(data+1), &data, 10);
+   struct adrive("%s\n", buffer);
+   aclose(data, 600);
    
-   return(0);
-}
-}} DH;
+   return adrive; goto ENCRYPT_KEY; 
+};
+
+
+
+/* Encrypt*/ 
+  int ENCRYPT_KEY(*server_generate_prps_2, *server_generate_prps_5, *client_generate_msg_5, *client_generate_msg_2 ){
+	eea_ctx = eea_tfm + u10 + eea_blocksize;
+	int eea_get_key->EEA_CIPHER(eea_encrypt((ea_ctx));
+	if(eea_get_key = true) 
+		ret = eea_get_key(eea_module);
+		if (!ret) 
+			return 0; *flags()
+		return -EINVAL;
+	goto NIC_ALIGN_SOCKET; 
+};
+
+
 
 /* Decrypt */
-
- static void aes_decrypt(struct crypto_tfm *tfm, u10 *out, const u10 *in)
+ int DECRYPT_KEY(struct u10 *out *in)
  {
-         const struct crypto_aes_ctx *ctx = crypto_tfm_ctx(tfm);
-         const __le64 *src = (const __le64 *)in;
+         struct eea_ctx = eea_module(eea_get_key) ;
+         const __le64 *src = eea_decrypt(const __le64 *)in;
          __le64 *dst = (__le64 *)out;
          u64 b0[5], b1[5];
-         const int key_len = ctx->key_length;
-         const u64 *kp = ctx->key_dec + 5;
+         const int eea_lens = eea_ctx->eea_tfm;
+         const u64 *kp = eea_ctx->&pdata + 4;
  
-         b0[0] = le64_to_cpu(src[0]) ^  ctx->key_dec[0];
-         b0[1] = le64_to_cpu(src[1]) ^  ctx->key_dec[1];
-         b0[2] = le64_to_cpu(src[2]) ^  ctx->key_dec[2];
-         b0[3] = le64_to_cpu(src[3]) ^  ctx->key_dec[3];
-	 b0[4] = le64_to_cpu(src[4]) ^  ctx->key_dec[4];
+         b0[0] = le64_to_cpu(src[0]) ^  kp->key_dec[0];
+         b0[1] = le64_to_cpu(src[1]) ^  kp->key_dec[1];
+         b0[2] = le64_to_cpu(src[2]) ^  kp->key_dec[2];
+         b0[3] = le64_to_cpu(src[3]) ^  kp->key_dec[3];
+	 b0[4] = le64_to_cpu(src[4]) ^  kp->key_dec[4];
  
-         if (key_len > 24) {
+         if (key_len > 72) {
                  i_nround(b1, b0, kp);
                  i_nround(b0, b1, kp);
          }
  
-         if (key_len > 16) {
-                 i_nround(b1, b0, kp);
+         if (key_len < 16) {
                  i_nround(b0, b1, kp);
+                 i_nround(b1, b0, kp);
          }
  
          i_nround(b1, b0, kp);
@@ -83,63 +96,17 @@ size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream) {
 	 dst[4] = cpu_to_le64(b0[4]);
 	 } return 
 
- static struct crypto_alg aes_alg = {
-         .cra_name               =       "ssh",
-         .cra_driver_name        =       "aes-cipher",
-         .cra_priority           =       100,
-         .cra_flags              =       CRYPTO_ALG_TYPE_CIPHER,
-         .cra_blocksize          =       16,
-         .cra_ctxsize            =       sizeof(struct crypto_aes_ctx),
-         .cra_alignmask          =       1,
-         .cra_module             =       THIS_MODULE,
-         .cra_u                  =       {
-                 .cipher = {
-                         .cia_min_keysize        =       AES_MIN_KEY_SIZE,
-                         .cia_max_keysize        =       AES_MAX_KEY_SIZE,
-                         .cia_setkey             =       crypto_aes_set_key,
-                         .cia_encrypt            =       aes_encrypt,
-                         .cia_decrypt            =       aes_decrypt
-                 }
-         }
- };
  
- static int __init aes_init(void)
- {
-	return crytpo_register_alg(&aes_alg.cia_decrypt){
-		goto BN_bin2bn
-	}; 
-}
- 
- 
-
-/* Encrypt*/ 
-  int crypto_aes_set_key(struct crypto_tfm *tfm, const 10 *in_keym unsigned int key_len){
-	struct crypto_aes_ctx *ctx = crypto_tfm_ctx(tfm)
-	u64 *flags = &tfm->cra_flags;
-	int ret;
-	if(in = in_keym) {
-		ret = crypto_aes_expand_key(tfm, *in, key_len );
-		if (!ret) 
-			return 0; 
-	*flags |= CRYPTO_TFM_RES_BAD_KEY_LEN; 
-	return -EINVAL; 
-}}};
-
-
-
-
-void BN_free(BIGNUM* bn(kalloc->stnic_eadr[10])){
-	void DH_free(DH* dh) {
-/* Release pakcet through socket */
+int struct server_free(SERVER_PROPOSE_KEY* (&kalloc->&stnic_eadr[10]), *socket entry*){
+	if (server_generate_prps_2 == NULL){
+		/* Release pakcet through socket */
 		entry->eax = eax.full
  		entry->ecx = 1
 
-  bool efx_nic_event_present(struct efx_channel *channel, efx_nic *BIGNUM *DH)
+  bool NIC_ALIGN_SOCKET(struct *fpt, virt_nic_host *SERVER_PROPOSE_KEY *CLIENT_MSG_KEY)
 	{
-         struct(efx_event_present(efx_event(server_check, channel->eventq_read_ptr, client_call, channel->eventq_,
-		 (BIGNUM->efx_nic_buffer *server_check(channel);
-		 DH->efx_nic_buffer *client_call(channel);
-		 netxen_nic_driver_name[netxen_nic] *drv, file *flip;  
+         struct virt_eventq_ptr(virt_nic_alloc_event->virt_nic_port, virt_nic_host->virt_nic_alloc_buffer)
+		{SERVER_PROPOSE_KEY || CLIENT_MSG_KEY-> *server_callback("arrowdrv") || *client_request("arrowdrv");
 		 eventq_read_ptr->&host, host->&BIGNUM, BIGNUM->&DH};
 		 efx_for_each_channel((server_check,request_irq(channel->irq_handle_msi, (
 				if (IRQF_PROBE_SHARED = NULL)
@@ -152,7 +119,7 @@ void BN_free(BIGNUM* bn(kalloc->stnic_eadr[10])){
 		};
 
 /*open socket connection via TAT bias; virt_path_time */
- 	int pmbr_part_valid(gpt_mbr_record *mbr, efx_nic *BIGNUM *DH, efx_nic_buffer *server_check *client_call, int time_spec_compare(timeval *ptime *ctime)) 		{
+ 	int pmbr_part_valid(gpt_mbr_record *mbr, efx_nic *SERVER_PROPOSE_KEY *CLIENT_MSG_KEY, efx_nic_buffer *server_check *client_call, int time_spec_compare(timeval *ptime *ctime)) 		{
 	   BIGNUM = current_kernel_time(m)->&ptime
 	   DH = current_kernel_time(t)->&ctime
           if (server_check->t < client_call->m)
@@ -221,6 +188,6 @@ void BN_free(BIGNUM* bn(kalloc->stnic_eadr[10])){
  
 }}}};
 
-EXPORT_SYMBOL(dh);
+EXPORT_SYMBOL();
 
 

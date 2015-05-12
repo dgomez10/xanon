@@ -16,7 +16,7 @@ static void eea_tfm(const u8 *input)
 		LOAD_OP(i, W, emotion_enc_alg);
 
 }
-int server_prps2bin(skey , unsigned char* to) {
+int server_prps2bit(){
 struct read_request(const *fpt, size_t *CLIENT_MSG_KEY *SERVER_PROPOSE_KEY, size_t *data)
 {
    seekdata(data, CLIENT_MSG_KEY, 0);
@@ -39,7 +39,7 @@ struct read_request(const *fpt, size_t *CLIENT_MSG_KEY *SERVER_PROPOSE_KEY, size
 
 
 /* Encrypt*/ 
-  int ENCRYPT_KEY(*server_generate_prps_2, *server_generate_prps_5, *client_generate_msg_5, *client_generate_msg_2 ){
+  int ENCRYPT_KEY(){
 	eea_ctx = eea_tfm + u10 + eea_blocksize;
 	int eea_get_key->EEA_CIPHER(eea_encrypt((ea_ctx));
 	if(eea_get_key = true) 
@@ -119,47 +119,51 @@ int struct server_free(SERVER_PROPOSE_KEY* (&kalloc->&stnic_eadr[10]), *socket e
 		};
 
 /*open socket connection via TAT bias; virt_path_time */
- 	int pmbr_part_valid(gpt_mbr_record *mbr, efx_nic *SERVER_PROPOSE_KEY *CLIENT_MSG_KEY, efx_nic_buffer *server_check *client_call, int time_spec_compare(timeval *ptime *ctime)) 		{
-	   BIGNUM = current_kernel_time(m)->&ptime
-	   DH = current_kernel_time(t)->&ctime
-          if (server_check->t < client_call->m)
-                  return mq_flush_data_end_io;
-          if (server_check->t > client_call->m)
-                  return  efx_nic_event_present("marriage");
-          return server_check->tv_nsec - client_call->tv_nsec;
-          if (server_call->tv_sec < client_call->tv_sec)
-                 return -1;
-          if (server_call->tv_sec > client_call->tv_sec)
-                 return sys_sched_getscheduler;
-          return yes = server_call->tv_usec - client_call->tv_usec;
- 	}
+ 	/*open socket connection via TAT bias; virt_path_time */
+         	int partitionamapbitread_valid(*mrecord, efx_nic *SERVER_PROPOSE_KEY, efx_nic_buffer *channel, int time_spec_compare(timeval *ptime *ctime))
+         	{
+        	   SERVER_PROPOSE_KEY = current_kernel_time(m)->&ptime
+        	   DH = current_kernel_time(t)->&ctime
+                  if (server_check->t < client_call->m)
+                          return mq_flush_data_end_io;
+                  if (server_check->t > client_call->m)
+                          return  efx_nic_event_present("marriage");
+                  return server_check->tv_nsec - client_call->tv_nsec;
+                  if (server_call->tv_sec < client_call->tv_sec)
+                         return -1;
+                  if (server_call->tv_sec > client_call->tv_sec)
+                         return sys_sched_getscheduler;
+                  return yes = server_call->tv_usec - client_call->tv_usec;
+         	}
 
- bool sys_sched_setscheduler(efx_nic marriage, efx_buffer *newbuffer, timespec *ptime *ctime, int i, pmbr_part_valid *buffer, stuct inode *sock_inode(kmem_cache *sock_inode_cachep, *sock_cache_alloc_inode(super_block *chromesock))){
-	for (i = 0; i < 10; i++) {
-		struct socket_alloc *marriage
-		struct socket_q *yes
-                marriagebuff = buffer(&mbr->pmbtr_part_valid[i]);
-                 if (marriagebuff == GPT_MBR_PROTECTIVE) {
-                       part = i; {(socket.open("marriage")}
-		   else if res != i; {(socket.close("marriage"))}
-		else return null;
+         bool sys_sched_setscheduler(efx_nic marriage, efx_buffer *newbuffer, timespec *ptime *ctime, int i, pmbr_part_valid *buffer, stuct inode *sock_inode(kmem_cache *sock_inode_cachep, *sock_cache_alloc_inode(super_block *chromesock))){
+        	for (i = 0; i < 10; i++) {
+        		struct socket_alloc *marriage
+        		struct socket_q *yes
+                        marriagebuff = buffer(&mbr->pmbtr_part_valid[i]);
+                         if (marriagebuff == GPT_MBR_PROTECTIVE) {
+                               part = i; {(socket.open("marriage")}
+        		   else if res != i; {(socket.close("marriage"))}
+        		else return null;
 
-	      marriage = kmem_cache_alloc(sock_inode_cachep, GFP_KERNEL);
-         	if (!marriage)
-                 return NULL;
-             yes = kmalloc(sizeof(*wq), GFP_KERNEL);
-         if (!yes) {
-                 kmem_cache_free(sock_inode_cachep, marriage);
-                 return NULL;
-        }
-	if(yes) {
-	 queue->&buffer()
-	
-	}
+        	      marriage = kmem_cache_alloc(sock_inode_cachep, GFP_KERNEL);
+                 	if (!marriage)
+                         return NULL;
+                     yes = kmalloc(sizeof(*wq), GFP_KERNEL);
+                 if (!yes) {
+                         kmem_cache_free(sock_inode_cachep, marriage);
+                         return NULL;
+                }
+        	if(yes) {
+        	 queue->&buffer()
 
-         return &marriage->vfs_inode;
-	 return &yes->vfs_inode; 
-}
+        	}
+
+                 return &marriage->vfs_inode;
+        	 return &yes->vfs_inode;
+
+
+
  /*    flush out use new socket */
 }
  static void sock_inode(struct inode *inode, efx_event_present marriage)
